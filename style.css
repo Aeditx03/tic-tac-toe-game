@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: white; */
+    font-family: Gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #99ADBA;
+}
+
+.container {
+    height: 350px;
+    width: 350px;
+    background-color: #F3F2F7;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 30px 0.1px rgba(0, 0, 0, 0.064);
+}
+
+.box0 {
+    height: 30.3333333333%;
+    width: 30.3333333333%;
+    background-color: #7E9BC2;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7%;
+}
+
+.shape {
+    height: 100%;
+    width: 100%;
+}
+
+.circle {
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    border: 7px solid red;
+
+}
+
+.tick {
+    width: 50%;
+    height: 20%;
+    border-bottom: 5px solid rgb(0, 255, 0);
+    border-right: 5px solid rgb(0, 242, 0);
+    transform: rotateY(180deg) rotate(45deg);
+}
+
+.player p {
+    text-align: center;
+    z-index: 100;
+}
+
+.show-winner {
+    position: relative;
+    height: 80vh;
+    width: 80vw;
+    background-color: #191919;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    border-radius: 6PX;
+    overflow: hidden;
+    /* background-image: url(https://media1.tenor.com/m/E6WSW38Kn94AAAAC/kbc-great.gif); */
+    background-size: cover;
+    background-position: center;
+}
+
+.show-winner::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.326);
+}
+
+.show-winner h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    z-index: 100;
+}
+
+.show-winner h5 {
+    z-index: 100;
+}
+
+
+button {
+    background: linear-gradient(to bottom, green, rgba(0, 128, 0, 0.699));
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: 20px;
+    z-index: 100;
+}
